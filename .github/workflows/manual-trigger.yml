@@ -1,0 +1,9 @@
+name: Manual Trigger Example
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo " This was triggered manually from GitHub UI!"
