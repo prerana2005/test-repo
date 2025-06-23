@@ -1,0 +1,11 @@
+name: Cron Schedule Example
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo " This runs every 15 mins!"
