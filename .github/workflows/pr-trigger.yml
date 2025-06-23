@@ -1,0 +1,9 @@
+name: Pull Request Trigger Example
+
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🔃 Triggered by a Pull Request!"
